@@ -1,8 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 body{
-background: url(./gathering.jpg);
+background: url(./jason.jpg);
 background-size: 25%;
+text-align: center;
 color: #FFF;
 text-shadow: 2px 2px 2px #000;
 font-family: 'Montserrat', sans-serif;
