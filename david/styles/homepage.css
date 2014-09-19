@@ -1,0 +1,12 @@
+#myImage{
+width: 20vw;
+height: 22vw;
+background: url(../images/davidWhite.jpg);
+background-size: 100%;
+margin: 1.5vh;
+float:right;
+border: 5px solid #222;
+border-radius: 25px;
+box-shadow: 5px 5px 10px -2px #222;
+}
+
