@@ -71,7 +71,7 @@
               <div class="imageContainer" style="margin-top: 10px; margin-bottom:0px;">
                 <div class="individualImageContainer" style="width: 362px; height: 246px;"><img src="./images/bingo/ticketChecker.jpg" height="246" width="362"></div>
               </div>
-              <p>In order to make the game more exciting and ensure one winner the ticket generation is not truly random. Instead </p>
+              <p>In order to make the game more exciting and ensure one winner the ticket generation is not truly random. Instead the tickets are generated to ensure that all but 4 of the tickets have at least one of the last 4 songs on them. This essentially means that they will not win (but this will only be clear if the order of the songs is known). The remaining 4 tickets will win on one of each of the 4 songs that occur before the final 4. These 4 'winning tickets' are spread evenly throughout the pack of tickets - this ensures that if at least the first 25% of the tickets are sold, there will be only be one winner (which will not necessarily be in the first 25% if more than 25% are sold).</p>
             </div>
 
 
@@ -98,18 +98,24 @@
 
             <div class="projectBox">
               <h2>Controllable OpenGL Particle System</h2>
-              <p>Particles.</p>
+              <h3>Project Description:</h3>
+              <p>This project was part of my Advanced Computer Graphics course in the first semester of my third year at University. We were tasked with creating a particle system which could be controlled and adjusted in realtime. The program I have created allows you to control many parameters including start and end colours, particle lifetime, particle birthrate, velocity, gravity strength, particle style (rendered as points, squares or stars), particle size, the spread of the particles and explosions (on death) and particle trails. I also implemented a dedicated 'fireworks mode' which can be seen in the middle GIF below.</p>
               <h3>Some examples of what can be produced with this system are shown below:</h3>
               <div class="imageContainer">
                 <div class="individualImageContainer" style="width: 320px; height: 257px;"><img src="./images/particles/particles1.gif" height="257" width="320"></div>
                 <div class="individualImageContainer" style="width: 320px; height: 257px;"><img src="./images/particles/particles2.gif" height="257" width="320"></div>
                 <div class="individualImageContainer" style="width: 320px; height: 257px;"><img src="./images/particles/particles3.gif" height="257" width="320"></div>
               </div>
+              <h3>Technical Details:</h3>
+              <p>This project was written in <b>C</b> using <b>OpenGL</b> and <b>GLUT</b> for the rendering of the world and particle system. All the information about the individual particles was stored a in <b>struct</b> called Particle. To allow for the easy addition and removal of particles to the system, each Particle <b>struct</b> contained pointers to both the previous and next particles - creating a <b>doubly linked list</b> of particles.<br><br>
+                When the particles hit the ground plane, they bounce off at a dampened velocity, dictated by a parameter in the program. This is acheived by checking (at every tick) whether the particle will go below the ground level in the current tick (by comparing the y co-ordinate of the plane with the y co-ordinate + velocity of the particle), if the particle will go below, the y co-ordinate is set to be equal to the ground plane and the y velocity is reversed and scaled down.<br><br>
+                To create the particle trails, after each tick, the particle emits another smaller particle behind it which has a very short lifetime - when in motion, this gives the effect of a trail behind the particle with the same shape as the particle.<br>
+                Explosions are created in a similar way, where on death, several particles with short lives are emitted from the point of death in every direction, this creates an explosion effect on the death of a particle.</p>
             </div>
 
             <div class="projectBox">
               <h2>Train Station Live Departure Board</h2>
-              <p>Trains.</p>
+              <p></p>
               <h3>The image below shows a typical departure board with any alterations to the scheduled service being shown in different colours. With light red indicating a delay, pure red indicating a cancellation and orange indicating that the service has been replaced with a bus:</h3>
               <div class="imageContainer">
                 <div class="individualImageContainer" style="width: 734px; height: 413px;"><img src="./images/departureBoard/boardExample.jpg" height="413" width="734"></div>
