@@ -159,6 +159,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e6e99', end
 	background-size: 100%;
 }
 
+.topArrowPreload{
+	background: url(../images/topArrow-hover.png) no-repeat center center;
+	display: none;
+}
+
 .topArrowText{
 	position: absolute;
 	top: 3px;
@@ -167,6 +172,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e6e99', end
 	color: #000;
 	text-shadow: 0px 0px 5px #fff;
 	font-weight: bold;
+
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #projectsTitle{
