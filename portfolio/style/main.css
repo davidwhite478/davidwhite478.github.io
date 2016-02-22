@@ -15,8 +15,8 @@ body {
 }
 
 .mainBody{
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 3px;
+	padding-right: 3px;
 }
 
 
@@ -97,18 +97,91 @@ body {
 	margin-bottom: 15px;
 }
 
+#contentsHelp{
+	text-align: center;
+	color: #000;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 330px;
+	background: #fff;
+	box-shadow: 0px 0px 5px 0px #000;
+	border: solid #000 1px;
+	font-weight: bold;
+	font-size: 1.20em;
+}
+
+.contents{
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px 0px 50px -10px #000;
+}
+
+.projectLink{
+	width: 100%;
+	border: solid #000 2px;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+
+	background: rgb(235,235,235); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(235,235,235,1) 0%, rgba(255,255,255,1) 50%, rgba(235,235,235,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(235,235,235,1) 0%,rgba(255,255,255,1) 50%,rgba(235,235,235,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(235,235,235,1) 0%,rgba(255,255,255,1) 50%,rgba(235,235,235,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.projectLink:hover{
+	cursor: pointer;
+	background: #3e9be2;
+
+background: rgb(30,110,153);
+background: -moz-linear-gradient(top,  rgba(30,110,153,1) 1%, rgba(38,193,255,1) 50%, rgba(30,110,153,1) 100%);
+background: -webkit-linear-gradient(top,  rgba(30,110,153,1) 1%,rgba(38,193,255,1) 50%,rgba(30,110,153,1) 100%);
+background: linear-gradient(to bottom,  rgba(30,110,153,1) 1%,rgba(38,193,255,1) 50%,rgba(30,110,153,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e6e99', endColorstr='#1e6e99',GradientType=0 );
+
+}
+
+.topArrow{
+	width: 65px;
+	height: 50px;
+	background: url(../images/topArrow.png) no-repeat center center;
+	background-size: 100%;
+	top: 10px;
+	right: 10px;
+	position: absolute;
+}
+
+.topArrow:hover{
+	cursor: pointer;
+	background: url(../images/topArrow-hover.png) no-repeat center center;
+	background-size: 100%;
+}
+
+.topArrowText{
+	position: absolute;
+	top: 3px;
+	left: 5px;
+	font-size: 0.95em;
+	color: #000;
+	text-shadow: 0px 0px 5px #fff;
+	font-weight: bold;
+}
+
 #projectsTitle{
 	text-align: center;
 	color: #FFF;
 	font-size: 50px;
 	text-shadow: 2px 2px 10px #000;
 	margin-top: 10px;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 
 .projectBox{
+	position: relative;
 	border: solid #000 2px;
-	width: 1000px;
+	width: 950px;
 	/*height: 1000px;*/
 
 	margin-bottom: 15px;
@@ -142,6 +215,16 @@ body {
 	width: 800px;
 	margin-left: auto;
 	margin-right: auto;
+	font-size: 1.1em;
+	text-decoration: underline;
+}
+
+.projectBox h4{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
 	font-size: 1.05em;
 }
 
@@ -154,7 +237,7 @@ body {
 }
 
 .previewBox{
-	width: 300px;
+	width: 290px;
 	height: 169px;
 	background: #F00;
 	display: inline-block;
@@ -234,8 +317,8 @@ body {
 }
 
 .individualImageContainer{
-	margin-left: 5px;
-	margin-right: 5px;
+	margin-left: 3px;
+	margin-right: 3px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding: 0px 0px 0px 0px;
@@ -247,5 +330,5 @@ body {
 .videoContainer{
 	margin-left: auto;
 	margin-right: auto;
-	box-shadow: 0px 0px 50px -10px #000;
+	box-shadow: 0px 0px 30px -10px #000;
 }
