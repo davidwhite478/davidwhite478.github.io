@@ -31,9 +31,9 @@ body {
 	z-index: -2;
 
 	background: rgb(0,0,0); /* Old browsers */
-	background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,56,112,1) 51%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,56,112,1) 51%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,56,112,1) 51%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,32,64,1) 51%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,32,64,1) 51%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,32,64,1) 51%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .backgroundOverlay{
@@ -68,10 +68,10 @@ body {
 #introBox{
 	border: solid #000 2px;
 	width: 750px;
-	margin-top: 10px;
+	margin-top: 0px;
 	margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
@@ -87,14 +87,14 @@ body {
 
 #introBox h2{
 	text-align: center;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 6px;
+	margin-bottom: 3px;
 }
 
 #introBox p{
 	text-align: left;
-	margin-top: 10px;
-	margin-bottom: 15px;
+	margin-top: 2px;
+	margin-bottom: 10px;
 }
 
 #contentsHelp{
@@ -132,10 +132,10 @@ body {
     -ms-user-select: none;
     user-select: none;
 
-	background: rgb(235,235,235); /* Old browsers */
-	background: -moz-linear-gradient(top, rgba(235,235,235,1) 0%, rgba(255,255,255,1) 50%, rgba(235,235,235,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(235,235,235,1) 0%,rgba(255,255,255,1) 50%,rgba(235,235,235,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(235,235,235,1) 0%,rgba(255,255,255,1) 50%,rgba(235,235,235,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: rgb(200,200,200); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(200,200,200,1) 0%, rgba(255,255,255,1) 50%,rgba(200,200,200,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(200,200,200,1) 0%,rgba(255,255,255,1) 50%,rgba(200,200,200,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(200,200,200,1) 0%,rgba(255,255,255,1) 50%,rgba(200,200,200,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .projectLink:hover{
@@ -193,7 +193,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e6e99', end
 	color: #FFF;
 	font-size: 50px;
 	text-shadow: 2px 2px 10px #000;
-	margin-top: 10px;
+	margin-top: 0px;
 	margin-bottom: 10px;
 }
 
@@ -224,7 +224,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e6e99', end
 }
 
 .projectBox h2{
-	margin-top: 10px;
+	margin-top: 5px;
 	margin-bottom: 10px;
 }
 
