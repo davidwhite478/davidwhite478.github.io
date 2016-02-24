@@ -1,0 +1,110 @@
+.contentBox{
+	height: auto;
+	padding-bottom: 25px;
+}
+
+#contactFormBox{
+	position: relative;
+	width: 705px;
+	font-size: 13px;
+	background: rgba(20, 20, 20, .6);
+	height: auto;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-top: 10px;
+	padding-bottom: 40px;
+	border: solid #6F3116 1px;
+	border-radius: 5px;
+	text-shadow: 2px 2px 2px #000;
+}
+
+.contactFormField{
+	font-size: 14px;
+	color: #FFF;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 700px;
+	background: #410E0E;
+	border: solid #6F3116 1px;
+	box-shadow: 0px 0px 5px #000 inset;
+	padding: 5px 5px 5px 5px;
+}
+
+.contactFormField:focus{
+	outline-color: #E0652F;
+}
+
+.warningMessage{
+	text-align: center;
+	color: #F00;
+	display: none;
+}
+
+#nameField{
+	
+}
+
+#emailField{
+	
+}
+
+#subjectField{
+	
+}
+
+#messageField{
+	height: 300px;
+	max-height: 700px;
+	/*width: 700px;*/
+	resize: vertical;
+}
+
+#sendButton{
+	position: absolute;
+	width: 80px;
+	height: 25px;
+	font-size: 15px;
+	right: 52px;
+	border: 0px;
+	color: #FFF;
+	text-shadow: 2px 2px 2px #000;
+	background: #6F3116;
+	box-shadow: 0px 0px 5px #000 inset;
+	border-radius: 3px;
+	outline: 0;
+}
+
+#sendButton:hover{
+	background: #E0652F;
+	outline: 0;
+	cursor: pointer;
+}
+
+#sendButton:active{
+	background: #DF501C;
+	outline: 0;
+	cursor: pointer;
+}
+
+#captcha{
+	margin-top: 10px;
+	margin-left: 200px;
+	margin-bottom: 10px;
+}
+
+#messageSent{
+	display: block;
+	font-size: 16px;
+	color: #FFF;
+	text-align: center;
+	width: 800px;
+	height: 50px;
+	line-height: 35px;
+	padding-top: 45px;
+	margin-right: auto;
+	margin-left: auto;
+	text-shadow: 2px 2px 2px #000;
+}

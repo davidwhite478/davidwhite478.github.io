@@ -294,6 +294,8 @@ void changeSpread(int amount)
     particleSpread = 0;
 }
 
+// This function changes the particle start colour (either red, green or blue) by the amount
+// specified by 'amount'. All other colours are compensated for.
 void changeColour(int colour, float amount)
 {
   switch(colour)
@@ -348,6 +350,8 @@ void changeColour(int colour, float amount)
   }
 }
 
+// This function changes the particle end colour (either red, green or blue) by the amount
+// specified by 'amount'. All other colours are compensated for.
 void changeEndColour(int colour, float amount)
 {
   switch(colour)
@@ -409,11 +413,13 @@ int tickNumber = 0;
 float gravityIntensity = DEFAULT_GRAVITY;
 float gravityAcceleration = 0.0981;
 
+// This function increases or decreases the gravity intensity by the amount given
 void changeGravity(float amount)
 {
   gravityIntensity = gravityIntensity + amount;
 }
 
+// This function resets the simulation to the default values for all apart from colour
 void resetSimulation()
 {
   tickNumber = 0;
@@ -469,6 +475,7 @@ void resetSimulation()
 
 int temp;
 
+// This function enables or disables 'fireworks mode' in which particles appear like fireworks
 void toggleFireworksMode()
 {
   temp = fireworksMode;
@@ -501,6 +508,7 @@ void toggleFireworksMode()
   }
 }
 
+// This function decribes all the functions associated with each of the menu options
 void menu (int menuentry) {
   switch (menuentry) {
   case 1: changeVelocity(1);
@@ -552,6 +560,9 @@ void menu (int menuentry) {
   }
 }
 
+// This function will generate a new particle with the initial values specified elsewhere
+// in the program (with some element of randomness). The particle is then added to the end
+// of the linked list.
 void generateParticle()
 {
   Particle* newParticlePtr = (Particle*)malloc(sizeof(Particle));
@@ -611,6 +622,9 @@ void generateParticle()
   particleCount = particleCount + 1;
 }
 
+// This function is called on the death of any particles when explosions are enabled
+// It will generate a set number of particles at the death point with random velocities
+// in all directions.
 void explodeParticle(Particle* explodingParticle)
 {
   Particle* newParticlePtr;
@@ -661,6 +675,9 @@ void explodeParticle(Particle* explodingParticle)
   }
 }
 
+// This function is called at every tick by each particle when trails are enabled.
+// It generates a new (short life) particle at the particles current position with 0
+// velocity. This creates the effect of a trail behind the particle.
 void generateTrailParticle(Particle* mainParticle)
 {
   Particle* newParticlePtr = (Particle*)malloc(sizeof(Particle));
@@ -709,6 +726,9 @@ void generateTrailParticle(Particle* mainParticle)
 
 Particle* tempNextParticle = NULL;
 
+// This function is called for each particle at each tick to move the particle to a new
+// position based on it's velocity. On death, the particle is either freed from memory, or
+// exploded into new particles.
 Particle* updateParticle(Particle* currentParticle)
 {
     if (currentParticle -> age + 1 > currentParticle -> lifetime)
@@ -778,6 +798,8 @@ Particle* updateParticle(Particle* currentParticle)
 
 float ageRatio;
 
+// This function renders the particle in the correct position with the values specified
+// in the Particle struct.
 void renderParticle(Particle* currentParticle)
 {
     // To Stop particles fading or changing colour in fireworks mode
@@ -867,6 +889,8 @@ void renderParticle(Particle* currentParticle)
     }
 }
 
+// This function generates a correct amount of new particles and updates the positions
+// of all the existing particles. glutPostRedisplay is then called to update the display.
 void animate(void)
 {
   if (particleBirthrate < 1)
@@ -897,6 +921,8 @@ void animate(void)
   glutPostRedisplay();
 }
 
+// This function will render the entire scene with the plane (if enabled), and all
+// the particles that are currently alive.
 void display()
 {
   glLoadIdentity();
@@ -933,6 +959,7 @@ void display()
 
 ///////////////////////////////////////////////
 
+// This function describes the functions to call on keyboard presses.
 void keyboard(unsigned char key, int x, int y)
 {
   switch(key)
@@ -984,6 +1011,7 @@ void keyboard(unsigned char key, int x, int y)
   glutPostRedisplay();
 }
 
+// This function describes the functionality of pressing directional keys
 void cursor_keys(int key, int x, int y) {
   switch (key) {
     case GLUT_KEY_UP: changeVelocity(0.5);
@@ -1004,6 +1032,8 @@ void cursor_keys(int key, int x, int y) {
 
 ///////////////////////////////////////////////
 
+// This function sets up the background colour, viewport size and camera in perspective
+// mode.
 void reshape(int width, int height)
 {
   glClearColor(0.05, 0.05, 0.05, 1.0);
@@ -1016,6 +1046,7 @@ void reshape(int width, int height)
 
 ///////////////////////////////////////////////
 
+// This functions generates the lines to represent the x,y and z axes.
 void makeAxes() {
 // Create a display list for drawing coord axis
   axisList = glGenLists(1);
@@ -1036,13 +1067,16 @@ void makeAxes() {
 }
 
 ///////////////////////////////////////////////
+
+// This function initalises the graphics that displayed and creates and binds the menu
+// to the right click button.
 void initGraphics(int argc, char *argv[])
 {
   glutInit(&argc, argv);
   glutInitWindowSize(800, 600);
   glutInitWindowPosition(100, 100);
   glutInitDisplayMode(GLUT_DOUBLE);
-  glutCreateWindow("COMP37111 Particles");
+  glutCreateWindow("Particle System - David White");
   glutDisplayFunc(display);
   glutKeyboardFunc(keyboard);
   glutReshapeFunc(reshape);
@@ -1091,6 +1125,7 @@ void initGraphics(int argc, char *argv[])
 
 /////////////////////////////////////////////////
 
+// Main function
 int main(int argc, char *argv[])
 {
   double f;

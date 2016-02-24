@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>The Incursion - Supernova Visuals</title>
+    <link rel="stylesheet" type="text/css" href="../../style/main.css">
+    <link rel="stylesheet" type="text/css" href="../../style/portfolio.css">
+    <link href="../../video-js/video-js.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../style/portfolioProject.css">
+    <link rel="stylesheet" type="text/css" href="../../style/incursion.css">
+    <link rel="shortcut icon" href="../../images/main/favicon.ico">
+    <meta name="description" content="Doctor Who - The Incursion is a fan-made collaboration project by Vortrix Productions and Vigilante Pictures which is currently in development. Supernova Visuals is providing all of the visual effects as well as general assistance in post-production. We have created the opening titles and closing credits as well as the various effects shots the project requires such as gunfire, various POV effects, 3D animated TARDIS fly-bys, sky replacements and much more. The story also requires a Sontaran space pod which we have designed from scratch in 3D software, creating our own unique take on the original design.">
+    <meta name="keywords" content="Doctor Who, VFX, Sontaran, 3D, Supernova Visuals">
+    <meta name="author" content="David White, Jack Willett">
+  </head>
+  <body>
+    <div id="logoContainer">
+      <a href="../../"><div id="logo"></div><div id="logoGlow"></div></a>
+    </div>
+    <div id="navbar">
+      <a href="../../portfolio"><div class="navbarElement" id="first">PORTFOLIO</div></a>
+      <a href="../../tutorials"><div class="navbarElement">TUTORIALS</div></a>
+      <a href="../../resources"><div class="navbarElement">RESOURCES</div></a>
+      <a href="../../contact"><div class="navbarElement" id="last">CONTACT</div></a>
+    </div>
+    <div class="contentBox">
+      <div class="titleBanner">PORTFOLIO</div>
+      <div id="projectLogo"></div>
+      <div class="projectDescription">
+        “Doctor Who - The Incursion” is a fan-made collaboration project by Vortrix Productions and Vigilante Pictures which is currently in development. Supernova Visuals is providing all of the visual effects as well as general assistance in post-production. We have created the opening titles and closing credits as well as the various effects shots the project requires such as gunfire, various POV effects, 3D animated TARDIS fly-bys, sky replacements and much more. The story also requires a Sontaran space pod which we have designed from scratch in 3D software, creating our own unique take on the original design. 
+      </div>
+      <div class="smallBannerSeparator">TEASER TRAILER</div>
+      <div class="projectVideo"><iframe width="800" height="470" src="https://www.youtube.com/embed/gcOJXG6UEoY" frameborder="0" allowfullscreen></iframe></div>
+
+      <div class="smallBannerSeparator" style="margin-bottom: 0px;">VFX PREVIEWS</div>
+
+      <div class="projectPreview" id="titlesPreview" onclick="showPreview(preview1, previewBackground); playWindowVideo(titles)"><div class="playButtonIcon"></div></div><div class="projectPreview" id="eyeShotPreview" onclick="showPreview(preview2, previewBackground); playWindowVideo(eyeShot)"><div class="playButtonIcon"></div></div><div class="projectPreview" id="pod360Preview" onclick="showPreview(preview3, previewBackground); playWindowVideo(sontaranPod)"><div class="playButtonIcon"></div></div>
+
+      <div class="projectPreview" id="eyeOpenPreview" onclick="showPreview(preview4, previewBackground); playWindowVideo(eyeOpen)"><div class="playButtonIcon"></div></div><div class="projectPreview" id="POVPreview" onclick="showPreview(preview5, previewBackground); playWindowVideo(POV)"><div class="playButtonIcon"></div></div><div class="projectPreview" id="scannerPreview" onclick="showPreview(preview6, previewBackground); playWindowVideo(Scanner)"><div class="playButtonIcon"></div></div>
+
+      <div class="projectPreview" id="gunPreview" onclick="showPreview(preview7, previewBackground); playWindowVideo(Gun)"><div class="playButtonIcon"></div></div><div class="projectPreview" id="podHitPreview" onclick="showPreview(preview8, previewBackground); playWindowVideo(podHit); setVideoVolume(podHit, 0.15)"><div class="playButtonIcon"></div></div><div class="projectPreview" id="flybysPreview" onclick="showPreview(preview9, previewBackground); playWindowVideo(flybys)"><div class="playButtonIcon"></div></div>
+
+      <div class="projectPreview" id="tardisLandPreview" onclick="showPreview(preview10, previewBackground); playWindowVideo(tardisLand)"><div class="playButtonIcon"></div></div><div class="projectPreview" id="lightsPreview" onclick="showPreview(preview11, previewBackground); playWindowVideo(lights)"><div class="playButtonIcon"></div></div><div class="projectPreview" id="unitPreview" onclick="showPreview(preview12, previewBackground); playWindowVideo(unit)"><div class="playButtonIcon"></div></div>
+
+      <div id="previewBackground" onclick="hideAndPause()">
+      </div>
+
+      <div class="actualPreviewBox" id="preview1">
+        <div class="previewVideo">
+          <video id="titles" class="video-js vjs-default-skin" width="889" height="500" controls preload="none" data-setup="{}">
+            <source src="../../videos/portfolio/incursion/Titles.mp4" type="video/mp4">
+            Your browser does not support HTML5 videos.
+          </video>
+        </div>
+        <div class="previewVideoDescription">
+          Opening Titles.
+        </div>
+      </div>
+
+      <div class="actualPreviewBox" id="preview2">
+        <div class="previewVideo">
+          <video id="eyeShot" class="video-js vjs-default-skin" width="889" height="500" controls preload="none" data-setup="{}">
+            <source src="../../videos/portfolio/incursion/eye_shot.mp4" type="video/mp4">
+            Your browser does not support HTML5 videos.
+          </video>
+        </div>
+        <div class="previewVideoDescription">
+          For this shot we were tasked with creating an alien landscape. We have achieved this by doing a series of sky replacements, rotoscoping and adding in various elements to the scene such as clouds, planets in the sky and birds flying past.
+        </div>
+      </div>
+
+      <div class="actualPreviewBox" id="preview3">
+        <div class="previewVideo">
+          <video id="sontaranPod" class="video-js vjs-default-skin" width="889" height="500" controls preload="none" loop data-setup="{}">
+            <source src="../../videos/portfolio/incursion/sontaran_pod.mp4" type="video/mp4">
+            Your browser does not support HTML5 videos.
+          </video>
+        </div>
+        <div class="previewVideoDescription">
+          Our Sontaran space pod model shown from all angles and a short animation showing how the doors on the pod open.
+        </div>
+      </div>
+
+      <div class="actualPreviewBox" id="preview4">
+        <div class="previewVideo">
+          <video id="eyeOpen" class="video-js vjs-default-skin" width="889" height="500" controls preload="none" data-setup="{}">
+            <source src="../../videos/portfolio/incursion/Eye_Open.mp4" type="video/mp4">
+            Your browser does not support HTML5 videos.
+          </video>
+        </div>
+        <div class="previewVideoDescription">
+          This is the opening shot of 'The Incursion'. We came up with the idea of an asteroid transitionally opening the episode revealing the 'The Eye of Orion'. The planet and the asteroids were creating using 'Element 3D' then positioned and animated in 3D space.
+        </div>
+      </div>
+
+      <div class="actualPreviewBox" id="preview5">
+        <div class="previewVideo">
+          <video id="POV" class="video-js vjs-default-skin" width="889" height="500" controls preload="none" data-setup="{}">
+            <source src="../../videos/portfolio/incursion/POV.mp4" type="video/mp4">
+            Your browser does not support HTML5 videos.
+          </video>
+        </div>
+        <div class="previewVideoDescription">
+          The first shot in this video is the Sontaran spying and scanning The Doctor and company from a distance using binoculars. The second shot shows the Sontaran watching The Doctor and company from the view of inside his helmet.
+        </div>
+      </div>
+
+      <div class="actualPreviewBox" id="preview6">
+        <div class="previewVideo">
+          <video id="Scanner" class="video-js vjs-default-skin" width="889" height="500" controls preload="none" data-setup="{}">
+            <source src="../../videos/portfolio/incursion/Scanner.mp4" type="video/mp4">
+            Your browser does not support HTML5 videos.
+          </video>
+        </div>
+        <div class="previewVideoDescription">
+          This shot of The Doctor's scanner had to be carefully tracked to match the movement of the physical prop. Then we had to digitally emulate depth-of-field on the scanner's display to match the original camera footage.
+        </div>
+      </div>
+
+      <div class="actualPreviewBox" id="preview7">
+        <div class="previewVideo">
+          <video id="Gun" class="video-js vjs-default-skin" width="889" height="500" controls preload="none" data-setup="{}">
+            <source src="../../videos/portfolio/incursion/Gun.mp4" type="video/mp4">
+            Your browser does not support HTML5 videos.
+          </video>
+        </div>
+        <div class="previewVideoDescription">
+          We added various muzzle flashes, recoil and particle smoke effects to the original footage to make the gunfire convincing. (clip contains temporary sound effects)
+        </div>
+      </div>
+
+      <div class="actualPreviewBox" id="preview8">
+        <div class="previewVideo">
+          <video id="podHit" class="video-js vjs-default-skin" width="889" height="500" controls preload="none" loop data-setup="{}">
+            <source src="../../videos/portfolio/incursion/Pod_Hit.mp4" type="video/mp4">
+            Your browser does not support HTML5 videos.
+          </video>
+        </div>
+        <div class="previewVideoDescription">
+          This short sequence shows the TARDIS colliding with our custom-designed Sontaran pod releasing energy significant to the plot.
+        </div>
+      </div>
+
+      <div class="actualPreviewBox" id="preview9">
+        <div class="previewVideo">
+          <video id="flybys" class="video-js vjs-default-skin" width="889" height="500" controls preload="none" data-setup="{}"> 
+            <source src="../../videos/portfolio/incursion/Flybys.mp4" type="video/mp4">
+            Your browser does not support HTML5 videos.
+          </video>
+        </div>
+        <div class="previewVideoDescription">
+          Various shots of our TARDIS model flying through space made specifically for when the story required.
+        </div>
+      </div>
+
+      <div class="actualPreviewBox" id="preview10">
+        <div class="previewVideo">
+          <video id="tardisLand" class="video-js vjs-default-skin" width="889" height="500" controls preload="none" data-setup="{}">
+            <source src="../../videos/portfolio/incursion/TARDIS_Land.mp4" type="video/mp4">
+            Your browser does not support HTML5 videos.
+          </video>
+        </div>
+        <div class="previewVideoDescription">
+          This shot required careful rotoscoping and depth-of-field effects to sell the illusion of the TARDIS landing behind the foreground actor. (clip contains temporary sound effects)
+        </div>
+      </div>
+
+      <div class="actualPreviewBox" id="preview11">
+        <div class="previewVideo">
+          <video id="lights" class="video-js vjs-default-skin" width="889" height="500" controls preload="none" data-setup="{}">
+            <source src="../../videos/portfolio/incursion/Lights.mp4" type="video/mp4">
+            Your browser does not support HTML5 videos.
+          </video>
+        </div>
+        <div class="previewVideoDescription">
+          We added several digital lighting effects to make the props illuminate as the actual props did not produce light.
+        </div>
+      </div>
+
+      <div class="actualPreviewBox" id="preview12">
+        <div class="previewVideo">
+          <video id="unit" class="video-js vjs-default-skin" width="889" height="500" controls preload="none" loop data-setup="{}">
+            <source src="../../videos/portfolio/incursion/UNIT.mp4" type="video/mp4">
+            Your browser does not support HTML5 videos.
+          </video>
+        </div>
+        <div class="previewVideoDescription">
+          We were asked to create a UNIT screensaver to appear in the background of the UNIT interior scenes.
+        </div>
+      </div>
+
+
+      <div class="mediumBannerSeparator" style="margin-top: 0px;">FOLLOW ITS PROGRESS</div>
+      <div class="socialMediaIconsContainer">
+        <a href="https://www.facebook.com/VortrixVigilante"><div class="facebookIcon"></div><div class="facebookIconOverlay"></div></a>
+        <a href="https://www.youtube.com/channel/UCautIW5pO9uUVmAi1eqq1Og/videos?sub_confirmation=1"><div class="youtubeIcon"></div><div class="youtubeIconOverlay"></div></a>
+        <a href="https://twitter.com/VortVig"><div class="twitterIcon"></div><div class="twitterIconOverlay"></div></a>
+      </div>
+      <div class="bottomPadding"></div>
+
+
+
+      
+    </div>
+
+    <div id="footer">
+      <div id="footerLogoContainer"><a href="../../"><div id="footerLogo"></div></a></div>
+      <div id="footerDisclaimer"> Copyright © 2015 Supernova Visuals. All Rights Reserved.
+                              <br> Website Designed by David White and Jack Willett
+      </div>
+      <div id="footerRHS"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="../../scripts/jquery-1.11.2.min.js"></script>
+    <script src="../../video-js/video.js"></script>
+    <script type="text/javascript" src="../../scripts/main.js"></script>
+    <script type="text/javascript" src="../../scripts/portfolio.js"></script>
+    <script type="text/javascript">
+      function hideAndPause()
+      {
+        hidePreviews(preview1, preview2, preview3, preview4, preview5, preview6, preview7, preview8, preview9, preview10, preview11, preview12, previewBackground);
+        pauseVideos(titles, eyeShot, sontaranPod, eyeOpen, POV, Scanner, Gun, podHit, flybys, tardisLand, lights, unit);
+      }
+    </script>
+
+  </body>
+</html>
