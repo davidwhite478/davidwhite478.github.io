@@ -15,10 +15,10 @@ function hidePreviews()
 $(".contents .projectLink").click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).find("a").attr('href') ).offset().top-(document.body.offsetWidth*1/500)
-    }, 1200);
+    }, 2000);
     return false;
 });
 
 $(".topArrow").click(function(){
-    $("html, body").animate({ scrollTop: "0px" }, 1200);
+    $("html, body").animate({ scrollTop: "0px" }, 2000);
 });
