@@ -6,7 +6,7 @@ function showPreview(divId, backgroundDivId)
 
 function hidePreviews()
 {
-	for (var i = 0; i < arguments.length; i++) 
+	for (var i = 0; i < arguments.length; i++)
 	{
     	arguments[i].style.display='none';
     }
@@ -15,10 +15,10 @@ function hidePreviews()
 $(".contents .projectLink").click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).find("a").attr('href') ).offset().top-(document.body.offsetWidth*1/500)
-    }, 800);
+    }, 1200);
     return false;
 });
 
-$(".topArrow").click(function(){    
-    $("html, body").animate({ scrollTop: "0px" }, 800);
+$(".topArrow").click(function(){
+    $("html, body").animate({ scrollTop: "0px" }, 1200);
 });
