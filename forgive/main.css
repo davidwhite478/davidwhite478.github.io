@@ -1,11 +1,11 @@
 .gameButton {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   display: block;
   border-radius: 100%;
   text-align: center;
   vertical-align: middle;
-  line-height: 400px;
+  line-height: 350px;
   font-size: 70px;
   font-family: monospace;
   color: #FFF;
@@ -29,9 +29,9 @@ body {
 
 .outerButton {
     display: block;
-    margin: 20px;
-    width: 400px;
-    height: 400px;
+    margin: 40px;
+    width: 350px;
+    height: 350px;
     border-radius: 100%;
     box-shadow: #565656 0 0 20px 0px;
 }
