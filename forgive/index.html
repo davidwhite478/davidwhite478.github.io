@@ -7,11 +7,13 @@
   <script type="text/javascript" src="./main.js"></script>
 </head>
 <body>
-  <div class="outerButton">
-    <div class="gameButton forgiveButton">FORGIVE</div>
+  <div class="spaceBuffer"></div>
+  <div class="outerButton" id="forgiveButton">
+    <div class="gameButton forgiveButton" onclick="selectButton('forgiveButton', 'cancelButton')">FORGIVE</div>
   </div>
-  <div class="outerButton">
-    <div class="gameButton cancelButton">CANCEL</div>
+  <div class="outerButton" id="cancelButton">
+    <div class="gameButton cancelButton" onclick="selectButton('cancelButton', 'forgiveButton')">CANCEL</div>
   </div>
+  <div class="spaceBuffer"></div>
 </body>
 </html>
